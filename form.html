@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Community - Form Anggota</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Tech Community</h1>
+        <nav>
+            <a href="index.html">Beranda</a>
+            <a href="form.html">Daftar Anggota</a>
+            <a href="multimedia.html">Multimedia</a>
+        </nav>
+    </header>
+    <main>
+        <h2>Pendaftaran Anggota Baru</h2>
+        <form id="memberForm">
+            <div class="form-group">
+                <label for="name">Nama Lengkap:</label>
+                <input type="text" id="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+            </div>
+            <div class="form-group">
+                <label for="interest">Bidang Minat:</label>
+                <select id="interest">
+                    <option value="">Pilih Bidang Minat</option>
+                    <option value="Artificial Intelligence">Artificial Intelligence</option>
+                    <option value="Web Development">Web Development</option>
+                    <option value="Mobile Development">Mobile Development</option>
+                    <option value="Data Science">Data Science</option>
+                    <option value="UI/UX Design">UI/UX Design</option>
+                </select>
+            </div>
+            <button type="submit">Daftar</button>
+            <button type="reset">Reset</button>
+        </form>
+        <div id="formMessage"></div>
+    </main>
+    <footer>
+        <p>&copy; 2026 Tech Community - Website Pengembangan Awal</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
